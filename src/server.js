@@ -18,10 +18,10 @@ nunjuncks.configure("src/app/views", {
     noCache: true
 })
 
-server.use(function(req, res) {
+server.use(function (req, res) {
     res.status(404).render("not-found");
 });
 
-server.listen(5000, function() {
+server.listen(5000, function () {
     console.log("Server is running!")
 })
